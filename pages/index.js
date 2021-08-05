@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
@@ -11,9 +12,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my world!" />
+        <Header title="Welcome to my next world!" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
+        </p>
+        <p>
+          <Link href="/contact">
+            <a>Click Here</a>
+          </Link>
         </p>
       </main>
 
